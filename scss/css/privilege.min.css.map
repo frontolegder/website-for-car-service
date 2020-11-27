@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,AAAC,CACP,gBAAgB,CAAC,gBAAmB,CACvC",
+    "sources": [
+        "../blocks/privilege.scss"
+    ],
+    "names": [],
+    "file": "privilege.min.css"
+}

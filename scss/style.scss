@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;    
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.grid {
+    width: calc(294px + 867 * ((100vw - 320px) /(1366 - 320)));
+    margin: 0 auto;
+}
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/privilege";
+@import "blocks/servises";
+@import "blocks/aboutUs";
+@import "blocks/footer";
+@import "blocks/hamburger";
+@import "blocks/modal";
+@import "blocks/forms";
+@import "blocks/pageup";

@@ -1,0 +1,91 @@
+.servises{
+    background-color:rgba(0, 0, 0, 0.95);
+    padding-top: calc(10px + 15 * ((100vw - 320px) /(1366 - 320)));
+    .servisesTitle {
+        font-weight: 300;
+        font-size: calc(18px + 30 * ((100vw - 320px) /(1366 - 320)));
+        color: white;
+        text-align: center;
+    }
+    .servisesWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: calc(15px + 40 * ((100vw - 320px) /(1366 - 320)));
+        .rotate {
+            position: relative;
+            perspective: 1000px;
+            width: calc(120px + 110 * ((100vw - 320px) /(1366 - 320)));
+            height: calc(120px + 110 * ((100vw - 320px) /(1366 - 320)));
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center; */
+            margin-top: 0;
+            margin-bottom: calc(20px + 30 * ((100vw - 320px) /(1366 - 320)));
+            margin-right: calc(10px + 15 * ((100vw - 320px) /(1366 - 320)));
+            margin-left: calc(10px + 15 * ((100vw - 320px) /(1366 - 320)));
+            
+            
+
+            .front {
+                width: 100%;
+                height: 100%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: calc(14px + 11 * ((100vw - 320px) /(1366 - 320)));
+                line-height: calc(17px + 8 * ((100vw - 320px) /(1366 - 320)));
+                color: white;
+
+                transition: 1s;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                
+                .txt{
+                    text-align: center;
+                    
+                }
+            }
+            
+            
+            .back {
+                width: 100%;
+                height: 100%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: calc(14px + 11 * ((100vw - 320px) /(1366 - 320)));
+                line-height: calc(17px + 8 * ((100vw - 320px) /(1366 - 320)));
+                color: white;
+
+                transition: 1s;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                transform: rotateY(180deg);
+            }
+            &:hover {
+                .front {
+                    transform: rotateY(180deg);
+                }
+            }
+            &:hover {
+                .back {
+                    transform: rotateY(360deg);
+                }
+            }
+        }
+    }
+}

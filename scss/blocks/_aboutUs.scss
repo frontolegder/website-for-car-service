@@ -1,0 +1,13 @@
+.aboutUs {
+    background-color: #EED374;
+    padding: calc(24px + 16 * ((100vw - 320px) /(1366 - 320))) 0;
+    color: black;
+    font-weight: 300;
+    font-size: calc(14px + 20 * ((100vw - 320px) /(1366 - 320)));
+    .aboutUsTitle{
+        text-align: center;
+        font-weight: 300;
+        font-size: calc(18px + 30 * ((100vw - 320px) /(1366 - 320)));
+        margin-bottom: calc(15px + 15 * ((100vw - 320px) /(1366 - 320)));
+    }
+}

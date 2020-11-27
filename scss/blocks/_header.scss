@@ -1,0 +1,163 @@
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, .35);
+    height: calc(60px + 73 * ((100vw - 320px) /(1366 - 320)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: all .3s ease;
+    &_out {
+        transform: translateY(-100%);
+    }          
+    .flex-container {
+        width: 100%;
+        z-index: 5;
+        margin: 0 auto;             
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logotip {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .logo {
+                width: calc(30px + 45 * ((100vw - 320px) /(1366 - 320)));
+                margin-right: calc(2px + 8 * ((100vw - 320px) /(1366 - 320)));
+                img {
+                    width: 100%;   
+                }        
+            }
+            .autoHelp {
+                color:white;
+                font-size: calc(12px + 14 * ((100vw - 320px) /(1366 - 320)));
+                text-transform: uppercase;
+            }
+        }
+        .menu {
+            width: 50%;
+            display: flex;
+            justify-content: space-around; 
+            list-style-type: none;  
+                
+            &_link {
+                color: #ffffff;
+                font-size: calc(10px + 10 * ((100vw - 230px) /(1366 - 230)));
+                letter-spacing: 0.8px;
+                text-decoration: none;
+                &:hover { 
+                    text-decoration: underline;
+                }   
+            }         
+        }
+        
+        
+        .rightBlock {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .titleCont{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-right: calc(10px + 20 * ((100vw - 320px) /(1366 - 320)));
+                a{
+                    font-weight: 600;
+                    font-size: calc(8px + 18 * ((100vw - 320px) /(1366 - 320)));
+                    color:white;
+                    text-decoration: none;
+                    &:hover { 
+                        text-decoration: underline;
+                    }
+                }
+                .orderCall{
+                    margin: 0; 
+                    padding: 0; 
+                    border: 0; 
+                    outline: none; 
+                    background-color: transparent;
+                    font-weight: 500;
+                    font-size: calc(9px + 5 * ((100vw - 320px) /(1366 - 320)));
+                    color: #F5D37B;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    
+                }
+                .orderCall:hover{
+                    font-weight: 600;
+                }
+            }
+        }
+    }   
+        
+    
+}
+
+@media (max-width:1100px) {
+    
+    .header {
+        .flex-container {
+            .menu{
+                width: 45%;
+                &_item {
+                    &:nth-child(4) {
+                        display: none;
+                    } 
+                } 
+            }
+        }
+    }
+    
+}
+
+@media (max-width:1000px) {
+    .header {
+        position: fixed;
+        z-index: 1;
+               
+        .flex-container {
+            .menu {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+                top: calc(60px + 73 * ((100vw - 320px) /(1366 - 320)));
+                left: -100%;                
+                height: calc(100vh - (60px + 73 * ((100vw - 320px) /(1366 - 320))));
+                padding: 20px 15px;
+                background-color: rgba(0,0,0, .8);
+                transition: 0.6s all;
+                &_active {
+                    left: 0;                    
+                }
+                &_item {
+                    padding-right: 0;
+                    border: none;
+                    margin: 10px 0;
+                    &:nth-child(4) {
+                        display: inline-block;
+                    }
+                }
+                &_link {
+                    
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: 700;
+                    letter-spacing: 0.8px;
+                    text-decoration: none;
+                    
+                }            
+            }
+        }   
+    }
+} 

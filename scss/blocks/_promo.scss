@@ -1,0 +1,109 @@
+.promo {  
+    background-image:url(/img/mainFoto.jpg);
+    width: 100%;
+    height: calc(400px + 376 * ((100vw - 320px) /(1366 - 320)));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: calc(60px + 73 * ((100vw - 320px) /(1366 - 320)));
+    display: flex;
+    align-items: center;
+    &_wrap {
+        padding-left: calc(30px + 45 * ((100vw - 320px) /(1366 - 320)));
+        .service{
+            h1{
+                font-weight: normal;
+                font-size: 70px;
+                text-transform: uppercase;
+                letter-spacing: 0.01em;
+                color: #FFB509;
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+        }
+        .repair {
+            h2 {
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 37px;
+                color: #E1DBDC;
+                margin-bottom: 40px;
+            }
+        }
+        .signUp {
+            width: 250px;
+            height: 60px;
+            border-radius: 30px;
+            border: 0; 
+            background-image: linear-gradient(180deg, #FFD572 8.85%, #CF9203 100%);
+            color: black;
+            font-weight: 500;
+            font-size: 22px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &:hover {
+                background-image: linear-gradient(180deg, #fdc84d 8.85%, #f5ab00 100%);
+            }
+        }
+        .krd {
+            font-weight: 500;
+            font-size: 32px;
+            color: #E1DBDC;
+            line-height: 23px;
+            text-align: center;
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .promo {
+        &_wrap {
+            .service {
+                h1 {
+                    font-size: calc(30px + 40 * ((100vw - 320px) /(900 - 320)));
+                    margin-bottom: calc(15px + 25 * ((100vw - 320px) /(900 - 320)));
+                }
+            }
+            .repair {
+                h2 {
+                    font-size: calc(14px + 18 * ((100vw - 320px) /(900 - 320)));
+                    line-height: calc(19px + 18 * ((100vw - 320px) /(900 - 320)));
+                    margin-bottom: calc(15px + 25 * ((100vw - 320px) /(900 - 320)));
+                }
+            }
+            .signUp {
+                width: calc(160px + 90 * ((100vw - 320px) /(900 - 320)));
+                height: calc(40px + 20 * ((100vw - 320px) /(900 - 320)));
+                font-size: calc(15px + 7 * ((100vw - 320px) /(900 - 320)));
+                margin-bottom: calc(15px + 15 * ((100vw - 320px) /(900 - 320)));
+            }
+            .krd {
+                font-size: calc(14px + 18 * ((100vw - 320px) /(900 - 320)));
+                line-height: calc(16px + 7 * ((100vw - 320px) /(900 - 320)));
+                span{
+                    font-size: calc(9px + 9 * ((100vw - 320px) /(900 - 320)));
+                }
+            }
+        }
+    }
+}
+@media (max-width:700px) {
+    .promo {
+        justify-content: center;
+        &_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            
+            .repair {
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
